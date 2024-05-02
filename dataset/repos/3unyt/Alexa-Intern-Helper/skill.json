@@ -1,0 +1,79 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Helps Future Amazon Interns during pre-onboarding with task reminders and task-completion assistance with automated emailing.",
+          "examplePhrases": [
+            "Alexa open intern helper",
+            "What should I do for my internship?",
+            "help"
+          ],
+          "keywords": [
+            "reminder",
+            "notification"
+          ],
+          "name": "Intern Preonboarding Timeline Helper",
+          "description": "Amazon has a timeline that provides expectations for interns on when to hear about certain resources prior to starting their internships. For example, Amazon says that an intern can expect to hear about a Background Check starting around 45-60 days before that intern\u0027s first Day 1. Amazon suggests, if an intern doesn\u0027t hear about a Background Check by 45 days before starting, that intern should reach out. We made that process easier for not only Background Checks, but also for the other resources in the timeline!\n\nThis skill collects your start date in order to determine the pre-onboarding resources you need to consider at this point in time. You can ask Intern Helper for the next task to complete, and Intern Helper will let you know. If you say haven\u0027t completed something or haven\u0027t received a particular resource, Intern Helper will ask if you\u0027d like to send an email automatically!\n\nThe process:\n1. Collect future intern\u0027s name and start date via dialogue mode\n2. Get the future intern\u0027s email address from account linking. If an email is not available due to permissions, we notify the user.\n3. Get next resource/task and check for completion status\n4. If the resource is overdue, prompt to send an email for the user",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Invocation: open intern helper",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": [
+        "US"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:055066558577:function:d1804a60-0271-4b64-a238-786af790f9cc:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:055066558577:function:d1804a60-0271-4b64-a238-786af790f9cc:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:055066558577:function:d1804a60-0271-4b64-a238-786af790f9cc:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:055066558577:function:d1804a60-0271-4b64-a238-786af790f9cc:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::profile:name:read"
+      },
+      {
+        "name": "alexa::profile:email:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://www.alexa.com/help/privacy"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}
