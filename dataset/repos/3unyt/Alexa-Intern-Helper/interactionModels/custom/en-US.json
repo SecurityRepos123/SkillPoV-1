@@ -1,0 +1,170 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "intern helper",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CaptureStartDateIntent",
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.Month"
+            },
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal"
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "My start date is {month} {day} {year}",
+            "I\u0027ll start on {month} {day}",
+            "I\u0027ll start on {month} {day} {year}",
+            "{month} {day}",
+            "{month} {day} {year}",
+            "I\u0027ll start on September seventh twenty twenty"
+          ]
+        },
+        {
+          "name": "CaptureUserNameIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "{name}",
+            "I\u0027m {name}",
+            "My name is {name} "
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CaptureStartDateIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.915203659174"
+          },
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.Month",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.276360922940.498098923415"
+              }
+            },
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.276360922940.529447668628"
+              }
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.276360922940.588328118"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CaptureUserNameIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.268831002591"
+          },
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.276360922940.498098923415",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What month will you start?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.276360922940.529447668628",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What day will you start?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.276360922940.588328118",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What year will you start?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.268831002591",
+        "variations": [
+          {
+            "type": "SSML",
+            "value": "\u003cspeak\u003eI heard {name} \u003csay-as interpret-as\u003d\"characters\"\u003e{name}\u003c/say-as\u003e, is that correct?\u003c/speak\u003e"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.915203659174",
+        "variations": [
+          {
+            "type": "SSML",
+            "value": "\u003cspeak\u003eThe start date of your internship is \u003csay-as interpret-as\u003d\"date\"\u003e {month} {day} {year} \u003c/say-as\u003e, right?\u003c/speak\u003e"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "14"
+}
