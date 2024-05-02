@@ -1,3 +1,6 @@
+# SkillPoV: Towards Accessible and Effective Privacy Notice for Amazon Alexa Voice Applications
+![overview1](https://github.com/SkillPoV/SkillPoV/assets/168246960/aee0adea-29e7-4501-adeb-d22fb68bb24e)
+
 # Instructions
 
 * Place your own openai api key in Line 6 of /DockerImage/code/privacy_notice_generator/chatGPT_summary.py
