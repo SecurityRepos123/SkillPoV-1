@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd DockerImage/
-docker build -t jingwen/privacynotice .
+docker build -t skillpov/privacynotice .
