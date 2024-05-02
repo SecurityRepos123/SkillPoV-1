@@ -2,13 +2,26 @@ const LaunchRequestHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
     },
-    handle(handlerInput) {
-        const speakOutput = "Welcome! This skill will collect your personal information. If you're curious about what kind of data might be collected, please say I want to know. Or, if you prefer to skip this for now, you can simply say I don't want to know. Remember, feel free to ask me anytime by saying tell me what data is collected";
+    async handle(handlerInput) {
+        const attributesManager = handlerInput.attributesManager;
+        const sessionAttributes = attributesManager.getSessionAttributes() || {};
+        
+        let userFirstTime = sessionAttributes['userFirstTime'];
 
-        return handlerInput.responseBuilder
-            .speak(speakOutput)
-            .reprompt(speakOutput)
-            .getResponse();
+        if (userFirstTime) {
+            const speakOutput = "Welcome! This skill will collect your personal information. If you're curious about what kind of data might be collected, please say I want to know. Or, if you prefer to skip this for now, you can simply say I don't want to know. Remember, feel free to ask me anytime by saying tell me what data is collected.";
+            return handlerInput.responseBuilder
+                .speak(speakOutput)
+                .getResponse();
+        } else {
+            attributesManager.setPersistentAttributes({ userFirstTime: true });
+            await attributesManager.savePersistentAttributes();
+
+            const speakOutput = 'Welcome Back! Remember, feel free to ask me anytime by saying tell me what data is collected. You can say yes to enter the skill.';
+            return handlerInput.responseBuilder
+                .speak(speakOutput)
+                .getResponse();
+        }
     }
 };
 
