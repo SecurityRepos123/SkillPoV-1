@@ -1,0 +1,55 @@
+const LaunchRequestHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
+    },
+    handle(handlerInput) {
+        const speakOutput = "Welcome! This skill will collect your personal information. If you're curious about what kind of data might be collected, please say I want to know. Or, if you prefer to skip this for now, you can simply say I don't want to know. Remember, feel free to ask me anytime by saying tell me what data is collected";
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .reprompt(speakOutput)
+            .getResponse();
+    }
+};
+
+const WantKnowIntentHandler = {
+    canHandle(handlerInput) {
+        return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+            && handlerInput.requestEnvelope.request.intent.name === 'WantKnowIntent';
+    },
+    handle(handlerInput) {
+    const speakOutput = '{repalce_content} Please say yes to continue or no to exit.';
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt(speakOutput)
+      .getResponse();
+    }
+}
+
+const DataCollectionIntentHandler = {
+    canHandle(handlerInput) {
+        return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+            && handlerInput.requestEnvelope.request.intent.name === 'DataCollectionIntent';
+    },
+    handle(handlerInput) {
+    const speakOutput = '{repalce_content} Please respond to any pending questions to continue, or say no if you wish to end the session.';
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt(speakOutput)
+      .getResponse();
+    }
+}
+
+
+const NoExitIntentHandler = {
+    canHandle(handlerInput) {
+        return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+            && handlerInput.requestEnvelope.request.intent.name === 'NoExitIntent';
+    },
+    handle(handlerInput) {
+    const speakOutput = 'Thank you! Goodbye.';
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .getResponse();
+    }
+}
