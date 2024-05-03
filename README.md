@@ -5,6 +5,7 @@
 
 * Place your own openai api key in Line 6 of /DockerImage/code/privacy_notice_generator/chatGPT_summary.py
 * Place the your own skills code in the /dataset/repos/your_name/your_skill_code. There is also an example folder under /dataset/repos.
+* For more skills, please refer dataset/all_skills_dataset.csv.
 
 If you prefer use Docker, Please exexute the following commands:
 * Run ./build.sh
