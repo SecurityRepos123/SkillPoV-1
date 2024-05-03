@@ -25,10 +25,7 @@ You can also exexute the code directly:
 <img width="auto" alt="" src="https://github.com/SkillPoV/SkillPoV/assets/168246960/d58058a2-a31c-4849-8f74-8209f7f66ed8">
 
 # Demo Vide
+* When the user opens this skill for the first time:
+https://github.com/SkillPoV/SkillPoV/assets/168246960/cd7eb598-273f-402c-8d2a-bee04e151aed
 * When the user opens this skill not for the first time:
-  
-
-https://github.com/SkillPoV/SkillPoV/assets/168246960/0323f3bd-6b50-44c6-b1b7-c514f9dcf0d5
-
-
-* 
+https://github.com/SkillPoV/SkillPoV/assets/168246960/0036392e-d370-4612-a784-9312e62eea9b
