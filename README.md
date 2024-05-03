@@ -22,7 +22,7 @@ You can also exexute the code directly:
 * Run DockerImage/code/privacy_notice_generator/main.py
 
 # Result
-<img width="1491" alt="Screenshot 2024-05-02 at 4 23 55 PM" src="https://github.com/SkillPoV/SkillPoV/assets/168246960/d58058a2-a31c-4849-8f74-8209f7f66ed8">
+<img width="auto" alt="" src="https://github.com/SkillPoV/SkillPoV/assets/168246960/d58058a2-a31c-4849-8f74-8209f7f66ed8">
 
 # Demo Vide
 * When the user opens this skill not for the first time:
