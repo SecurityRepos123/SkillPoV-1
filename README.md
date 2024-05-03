@@ -26,7 +26,14 @@ You can also exexute the code directly:
 
 # Demo Vide
 * When the user opens this skill for the first time:
-https://github.com/SkillPoV/SkillPoV/assets/168246960/88c67d7d-34d1-4a06-838c-49cfc237b167
+
+
+https://github.com/SkillPoV/SkillPoV/assets/168246960/bb10a404-2bb9-430d-888b-1e390514465c
+
+
 * When the user opens this skill for the first time:
-https://github.com/SkillPoV/SkillPoV/assets/168246960/e283211c-1757-44e0-be23-a6078ce4a1ed
+
+
+
+https://github.com/SkillPoV/SkillPoV/assets/168246960/09ebc07a-e143-499e-a3fb-73982505f404
 
