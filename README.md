@@ -22,7 +22,7 @@ You can also exexute the code directly:
 * Run DockerImage/code/privacy_notice_generator/main.py
 
 # Test on Alexa Developer Console
-* Create account/sign in: https://developer.amazon.com/alexa/console
+* Create account/sign in: [https://developer.amazon.com/alexa/console](https://developer.amazon.com/alexa/console/ask)
 * Click "Create Skill" and input neccessay information
 * Then follow the steps in the figures
 ![7491728064746_ pic](https://github.com/user-attachments/assets/4c5fe549-c5e4-4677-b85e-ed15a570e70d)
