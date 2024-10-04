@@ -21,10 +21,18 @@ You can also exexute the code directly:
 * Run DockerImage/code/data_collection_analysis/scan_skills.py
 * Run DockerImage/code/privacy_notice_generator/main.py
 
+# Test on Alexa Developer Console
+* Create account/sign in: https://developer.amazon.com/alexa/console
+* Click "Create Skill" and input neccessay information
+* Then follow the steps in the figures
+![7491728064746_ pic](https://github.com/user-attachments/assets/4c5fe549-c5e4-4677-b85e-ed15a570e70d)
+
+* 
+
+* 
+
 # Result
 <img width="auto" alt="" src="https://github.com/SkillPoV/SkillPoV/assets/168246960/d58058a2-a31c-4849-8f74-8209f7f66ed8">
-
-# Test on Alexa Developer Console
 
 # Demo Vide
 * When the user opens this skill for the first time:
