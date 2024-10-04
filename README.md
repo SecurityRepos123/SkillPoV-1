@@ -24,6 +24,8 @@ You can also exexute the code directly:
 # Result
 <img width="auto" alt="" src="https://github.com/SkillPoV/SkillPoV/assets/168246960/d58058a2-a31c-4849-8f74-8209f7f66ed8">
 
+# Test on Alexa Developer Console
+
 # Demo Vide
 * When the user opens this skill for the first time:
 
