@@ -1,0 +1,46 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "corona update",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getCoronaUpdate",
+                    "slots": [
+                        {
+                            "name": "country",
+                            "type": "AMAZON.Country"
+                        }
+                    ],
+                    "samples": [
+                        "what is the latest update for {country}",
+                        "Update me on {country}",
+                        "what is the latest update on {country}",
+                        "what is the latest coronavirus news in {country}",
+                        "what is the latest update on corona in {country}",
+                        "what is the latest update on coronavirus in {country}",
+                        "what is the latest update on covid nineteen in {country}",
+                        "what is the update on coronavirus",
+                        "what is the latest on coronavirus in {country}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

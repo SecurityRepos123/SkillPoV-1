@@ -1,0 +1,14 @@
+{
+  "name": "corona-update",
+  "version": "1.0.0",
+  "description": "Get updates on COVID-19 cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Debabrata Mondal",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk": "^2.0.10"
+  }
+}
