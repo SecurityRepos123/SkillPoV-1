@@ -1,1 +1,31 @@
-
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Wildcard",
+          "uri": "https://saylani-food-app.herokuapp.com/api/v1/webhook-alexa"
+        },
+        "interfaces": []
+      }
+    },
+    "permissions": [
+      {
+        "name": "alexa::devices:all:address:full:read"
+      },
+      {
+        "name": "alexa::profile:name:read"
+      },
+      {
+        "name": "alexa::profile:email:read"
+      }
+    ],
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "my food app"
+        }
+      }
+    }
+  }
+}

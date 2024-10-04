@@ -1,0 +1,129 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "the crazio",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "ShowMenuIntentHandler",
+          "slots": [],
+          "samples": [
+            "what are my options",
+            "what you have in menu",
+            "what you have",
+            "show me menu",
+            "I am hungry"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "MenuIntentHandler",
+          "slots": [],
+          "samples": [
+            "menu",
+            "what can i have right now",
+            "I am hungry suggest me something",
+            "what do you have in your menu",
+            "show me menu"
+          ]
+        },
+        {
+          "name": "PlaceOrderIntentHandler",
+          "slots": [
+            {
+              "name": "food",
+              "type": "menu"
+            },
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "give me {quantity} the item appeared {food} on the list",
+            "give me {quantity} {food}",
+            "done {quantity} {food} for me",
+            "i want {quantity} {food}",
+            "note my order of {quantity} {food}",
+            "Place order of {quantity} {food}"
+          ]
+        },
+        {
+          "name": "EmailIntentHandler",
+          "slots": [],
+          "samples": [
+            "what is my email",
+            "tell me my email",
+            "get my email"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "club sandwhich",
+                "synonyms": [
+                  "first",
+                  "club sandwhich",
+                  "1",
+                  "one "
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "zinger burger",
+                "synonyms": [
+                  "second",
+                  "zinger burger",
+                  "2",
+                  "two"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pizza fries",
+                "synonyms": [
+                  "third",
+                  "pizza fries",
+                  "3",
+                  "three"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "plain frires",
+                "synonyms": [
+                  "fourth",
+                  "plain fries",
+                  "4",
+                  "four"
+                ]
+              }
+            }
+          ],
+          "name": "menu"
+        }
+      ]
+    }
+  },
+  "version": "19"
+}
