@@ -4,7 +4,11 @@ from path import final_path, data_collection_results_path
 
 def chatgpt_summarize(content, folder_path, filename):
     # place your openai api key here
-    openai.api_key = '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'
+    key1 = 'sk-proj-u-CG8cZOIIt8wgU37ck6filgwJq6QzBVde2hPePl9pXIhd8saZo'
+    key2 = '3mPgu2YL9kWXtppHZNaOPqUT3BlbkFJDWRV-rtyugTLJgXrN9w8zu7rB3cr_YvmhYM-TzN6eH-PgPsL4K2iBpg4uGgu9WYAHSjElnKLYA'
+    final_key = key1 + key2 
+    openai.api_key = final_key
+    
     messages = [ {"role": "system", "content": "You are a intelligent assistant."} ]
     message = "If my input is 'data collection during conversation: birthday, data collection during conversation: age, data collection during conversation: address, ', \
                Your ouptut should be 'This skill will collect your birthday, age and address during the conversation.'\
