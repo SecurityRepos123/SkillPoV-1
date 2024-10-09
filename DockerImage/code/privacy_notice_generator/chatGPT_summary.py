@@ -4,8 +4,8 @@ from path import final_path, data_collection_results_path
 
 def chatgpt_summarize(content, folder_path, filename):
     # place your openai api key here
-    key1 = 'sk-proj-u-CG8cZOIIt8wgU37ck6filgwJq6QzBVde2hPePl9pXIhd8saZo'
-    key2 = '3mPgu2YL9kWXtppHZNaOPqUT3BlbkFJDWRV-rtyugTLJgXrN9w8zu7rB3cr_YvmhYM-TzN6eH-PgPsL4K2iBpg4uGgu9WYAHSjElnKLYA'
+    key1 = 'sk-proj-M0LtcqvomQhuLRHBcUQJzOZjZ4Q-V_uRoPLoAeaM8c2UfMjriF_eL7n_7TL8xATus-4ddVuG3_'
+    key2 = 'T3BlbkFJJlX_KdKtuFBmwUct4TMf_Q6dIE9GFwrlFy3NG_h8O2KqNJvgfFYCqahta74T63iZaFO2P5V-cA'
     final_key = key1 + key2 
     openai.api_key = final_key
     
